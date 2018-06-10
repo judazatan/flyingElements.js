@@ -1,0 +1,263 @@
+#aniBox{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+div#easeContainer {
+    padding: 10px 40px;
+    position: fixed;
+    top: 170px;
+    width: 100%;
+    background: #fff;
+    height: 220px;
+    width: 500px;
+    border: 1px dotted #f0f;
+    left: 510px;
+}
+
+
+
+div#easeContainer #aniControl{    
+    top: 0px;
+    position: absolute;
+}
+
+svg{
+    width: 248px;
+    height: 280px;        
+}
+
+svg path {
+    fill: transparent;
+    fill: rgba(255,255,255,0);
+    stroke: black;
+    stroke-width: 2px;
+}
+
+svg line {
+    stroke: #bbb;
+    stroke-width: 1px;
+}
+
+svg text {
+    font-size: 12px;
+    fill: #bbb;
+}
+
+div#stage {
+    position: fixed;
+    width: 500px;
+    height: 220px;
+    background: #fff;
+    border: 1px dotted #f0f;
+    
+}
+
+.ph {
+    height: 130px;
+}
+
+div#scrollArea {
+    height: 2000px;
+    background: #efefef;
+    width: 100%;
+    margin-top: 270px;
+}
+
+#scrollArea h2 {
+    position: fixed;
+}
+
+/*
+    stroke-dasharray: 164px;
+    stroke-dashoffset: 0px;
+*/
+
+#easeContainer > div#linear svg path{
+	 stroke-dasharray: 134px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_sine svg path{
+	 stroke-dasharray: 137px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_sine svg path{
+	 stroke-dasharray: 137px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_sine svg path{
+	 stroke-dasharray: 137px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_quad svg path{
+	 stroke-dasharray: 138px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_quad svg path{
+	 stroke-dasharray: 138px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_quad svg path{
+	 stroke-dasharray: 138px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_cubic svg path{
+	 stroke-dasharray: 142px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_cubic svg path{
+	 stroke-dasharray: 142px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_cubic svg path{
+	 stroke-dasharray: 142px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_quart svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_quart svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_quart svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_quint svg path{
+	 stroke-dasharray: 149px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_quint svg path{
+	 stroke-dasharray: 149px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_quint svg path{
+	 stroke-dasharray: 149px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_expo svg path{
+	 stroke-dasharray: 151px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_expo svg path{
+	 stroke-dasharray: 151px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_expo svg path{
+	 stroke-dasharray: 151px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_circ svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_circ svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_circ svg path{
+	 stroke-dasharray: 146px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_back svg path{
+	 stroke-dasharray: 153px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_back svg path{
+	 stroke-dasharray: 153px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_back svg path{
+	 stroke-dasharray: 161px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_elastic svg path{
+	 stroke-dasharray: 212px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_elastic svg path{
+	 stroke-dasharray: 212px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_elastic svg path{
+	 stroke-dasharray: 183px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_bounce svg path{
+	 stroke-dasharray: 166px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_out_bounce svg path{
+	 stroke-dasharray: 166px;
+	 stroke-dashoffset: 0px;
+}
+
+
+#easeContainer > div#ease_in_out_bounce svg path{
+	 stroke-dasharray: 164px;
+	 stroke-dashoffset: 0px;
+}
