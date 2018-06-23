@@ -13,7 +13,7 @@ div#easeContainer {
     top: 170px;
     width: 100%;
     background: #fff;
-    height: 220px;
+    height: 250px;
     width: 500px;
     border: 1px dotted #f0f;
     left: 510px;
@@ -51,7 +51,7 @@ svg text {
 div#stage {
     position: fixed;
     width: 500px;
-    height: 220px;
+    height: 250px;
     background: #fff;
     border: 1px dotted #f0f;
     
@@ -260,4 +260,14 @@ div#scrollArea {
 #easeContainer > div#ease_in_out_bounce svg path{
 	 stroke-dasharray: 164px;
 	 stroke-dashoffset: 0px;
+}
+
+#easeContainer > div#curveOverlay{
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 245px;
+    height: 167px;
+    top: 60px;
+    right: 210px;
 }

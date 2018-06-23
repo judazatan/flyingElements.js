@@ -304,13 +304,13 @@ $(document).ready(function(){
     
     buttonCheck($('#easeMethod').val());
     
-   $('#easeContainer div').not('#aniControl').hide(); 
+   $('#easeContainer div').not('#aniControl,#curveOverlay').hide(); 
    $('#easeContainer div#'+$('#easeMethod').val()).show();
    
    $('#easeMethod').change(function(){
        var v=$(this).val();
       buttonCheck(v);
-      $('#easeContainer div').not('#aniControl').hide(); 
+      $('#easeContainer div').not('#aniControl,#curveOverlay').hide(); 
       $('#easeContainer div#'+v).show(); 
    });      
    
@@ -323,7 +323,9 @@ $(document).ready(function(){
       var   v=$('#easeMethod').val(),
             sel=$('#easeMethod option:selected').text(),
             $g=$('#easeContainer > div#'+v+' svg path'),
-            gl=parseInt($g.css('stroke-dasharray'),10);
+            gl=parseInt($g.css('stroke-dasharray'),10),
+            $ov=$('#curveOverlay'),
+            ovW=245;
             
             //alert(gl); /* stroke-dasharray length */
             
@@ -336,8 +338,17 @@ $(document).ready(function(){
             }
         );
 
-        $g.css('stroke-dashoffset',gl+"px");
-        $g.animate({ 'stroke-dashoffset': '0px' }, animationTime, 'linear');
+        /*$g.css('stroke-dashoffset',gl+"px");
+        $g.animate({ 'stroke-dashoffset': '0px' }, animationTime, 'linear');*/
+       
+       $ov.css({          
+          'width':ovW+"px"
+       });
+       
+       
+       $ov.animate({           
+           'width':0
+       },animationTime, 'linear');
    });
    
    $(window).scroll(function(){
@@ -353,7 +364,9 @@ $(document).ready(function(){
              method=$('#easeMethod').val(),
              $g=$('#easeContainer > div#'+method+' svg path'),
              diaStart=parseInt($g.css('stroke-dasharray'),10),
-             val;       
+             val,
+             $ov=$('#curveOverlay'),
+             ovW=245;
              
               method = method.replace(/_([a-z])/g, function (g) { return g[1].toUpperCase(); });
              
@@ -369,7 +382,8 @@ $(document).ready(function(){
              console.log("Dia: "+parseFloat(val*(diaEnd-diaStart)+diaStart));
              
              $('#aniBox').css('left',parseFloat(val*(boxEnd-boxStart)+boxStart)+"px");
-             $g.css('stroke-dashoffset',parseFloat(rel*(diaEnd-diaStart)+diaStart)+"px");
+             $ov.css('width',parseFloat(ovW-rel*ovW)+"px");
+             //$g.css('stroke-dashoffset',parseFloat(rel*(diaEnd-diaStart)+diaStart)+"px");
         }
    });
 });
