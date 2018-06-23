@@ -325,15 +325,16 @@ $(document).ready(function(){
             $g=$('#easeContainer > div#'+v+' svg path'),
             gl=parseInt($g.css('stroke-dasharray'),10),
             $ov=$('#curveOverlay'),
-            ovW=245;
+            ovW=245,
+            $aB=$('#aniBox');
             
             //alert(gl); /* stroke-dasharray length */
             
-    
+        $aB.css('left',"10px");
       
-        $('#aniBox').animate({ left: '+=400px' }, animationTime, sel , 
+        $aB.animate({ left: '+=400px' }, animationTime, sel , 
             function () {                                 
-                    $('#aniBox').css('left','-=400px');    
+                    //$('#aniBox').css('left','-=400px');    
                     $t.prop('disabled',false);
             }
         );
