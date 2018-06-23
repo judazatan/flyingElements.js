@@ -369,7 +369,7 @@ $(document).ready(function(){
              console.log("Dia: "+parseFloat(val*(diaEnd-diaStart)+diaStart));
              
              $('#aniBox').css('left',parseFloat(val*(boxEnd-boxStart)+boxStart)+"px");
-             $g.css('stroke-dashoffset',parseFloat(val*(diaEnd-diaStart)+diaStart)+"px");
+             $g.css('stroke-dashoffset',parseFloat(rel*(diaEnd-diaStart)+diaStart)+"px");
         }
    });
 });
